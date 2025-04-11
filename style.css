@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-image: url("safwan-mahmud-6xQFm9TFwmk-unsplash.jpg"); /* airport for desktop */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Mobile override with train station */
+@media (max-width: 768px) {
+  body {
+    background-image: url("traveling-by-train-lifestyle.jpg");
+  }
+}
+
+.main-container {
+  width: 90%;
+  max-width: 400px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.navigation-bar {
+  background-color: #3b82f6;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.counter-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+#count-el {
+  font-size: 3rem;
+  color: #1e40af;
+  margin-bottom: 1.5rem;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.button-group button {
+  width: 100%;
+  max-width: 250px;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#increment-btn {
+  background-color: #10b981;
+}
+
+#increment-btn:hover {
+  background-color: #059669;
+}
+
+#save-btn {
+  background-color: #f59e0b;
+}
+
+#save-btn:hover {
+  background-color: #d97706;
+}
+
+#reset-btn {
+  background-color: #ef4444;
+}
+
+#reset-btn:hover {
+  background-color: #dc2626;
+}
+
+#save-el {
+  color: #374151;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .main-container {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .counter-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .button-group button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+
+  #count-el {
+    font-size: 2.5rem;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+}
